@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Hitesh Chowdhary — BCA Student at PES University, Bengaluru & Aspiring Full Stack Developer.">
+  <meta name="author" content="Hitesh Chowdhary">
+  <title>Hitesh Chowdhary — BCA Student | Aspiring Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background 3D Scroll Canvas -->
+  <canvas id="scroll-canvas"></canvas>
+  <div class="canvas-ambient-overlay"></div>
+
+  <!-- Left Floating Social Bar -->
+  <aside class="floating-social-bar" aria-label="Social Links">
+    <a href="https://github.com/hitesh066" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/hitesh-chowdhary-a715a631b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+    </a>
+    <a href="mailto:hiteshe297@gmail.com" aria-label="Email Hitesh">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+    </a>
+    <a href="tel:+917795724122" aria-label="Call Hitesh">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">&lt;HITESH.DEV/&gt;</a>
+      <nav class="nav-links" id="main-nav">
+        <a href="#home" class="nav-link active">HOME</a>
+        <a href="#about" class="nav-link">ABOUT ME</a>
+        <a href="#skills" class="nav-link">SKILLS</a>
+        <a href="#projects" class="nav-link">PROJECTS</a>
+        <a href="#experience" class="nav-link">EXPERIENCE</a>
+        <a href="#education" class="nav-link">EDUCATION</a>
+        <a href="#certifications" class="nav-link">CERTIFICATIONS</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
+      <a href="#contact" class="btn btn-nav-cta">
+        LET'S TALK
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+      </a>
+      <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Content Layer Over 3D Scroll Canvas -->
+  <main class="page-content">
+
+    <!-- ==========================================================
+         1. HERO SECTION
+         ========================================================== -->
+    <section id="home" class="hero-section">
+      <div class="hero-grid">
+        <div class="hero-text-col">
+          <div class="badge-subtitle">/// BCA STUDENT &bull; ASPIRING FULL STACK DEVELOPER</div>
+          <h1 class="hero-title">
+            I BUILD DIGITAL EXPERIENCES THAT<br>
+            <span class="gradient-text">SOLVE REAL PROBLEMS.</span>
+          </h1>
+          <p class="hero-description">
+            I'm Hitesh Chowdhary, a BCA student at PES University, Bengaluru, interested in full-stack development, web technologies, and building useful software applications.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              VIEW MY PROJECTS
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="resume.pdf" id="resume-download-btn" class="btn btn-ghost" download="Hitesh_Chowdhary_Resume.pdf">
+              DOWNLOAD RESUME
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-hud-col">
+          <!-- Availability / Career Preference Badge -->
+          <div class="hud-card status-card">
+            <div class="hud-label">STATUS &bull; CAREER PREFERENCE</div>
+            <div class="hud-value status-multi">
+              <span class="status-pulse-dot"></span>
+              <span class="hud-highlight">OPEN TO SUITABLE INTERNSHIP AND ENTRY-LEVEL OPPORTUNITIES</span>
+            </div>
+          </div>
+
+          <!-- Location Badge -->
+          <div class="hud-card location-card">
+            <div class="hud-label">LOCATION</div>
+            <div class="hud-value">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              BENGALURU, KARNATAKA, INDIA
+            </div>
+            <div class="globe-container">
+              <svg class="wireframe-globe-svg" viewBox="0 0 100 100" aria-hidden="true">
+                <circle cx="50" cy="50" r="44" stroke="#a855f7" stroke-width="1.2" fill="none" stroke-dasharray="3 3"/>
+                <ellipse cx="50" cy="50" rx="44" ry="18" stroke="#a855f7" stroke-width="1" fill="none"/>
+                <ellipse cx="50" cy="50" rx="18" ry="44" stroke="#a855f7" stroke-width="1" fill="none"/>
+                <line x1="6" y1="50" x2="94" y2="50" stroke="#a855f7" stroke-width="1"/>
+                <line x1="50" y1="6" x2="50" y2="94" stroke="#a855f7" stroke-width="1"/>
+                <circle cx="50" cy="50" r="3" fill="#c084fc"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         2. ABOUT ME SECTION
+         ========================================================== -->
+    <section id="about" class="section-container about-section">
+      <div class="section-tag">— GET TO KNOW ME —</div>
+      <h2 class="section-title">
+        ABOUT ME<br>
+        <span class="gradient-text">DEVELOPER BY CODE, CREATOR BY DRIVE</span>
+      </h2>
+
+      <div class="about-grid">
+        <!-- Abstract Developer Holographic Frame -->
+        <div class="cyber-media-frame">
+          <div class="cyber-corner tl"></div>
+          <div class="cyber-corner tr"></div>
+          <div class="cyber-corner bl"></div>
+          <div class="cyber-corner br"></div>
+          <div class="cyber-scanline"></div>
+          <div class="cyber-silhouette">
+            <svg viewBox="0 0 200 200" class="cyber-avatar-svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#9333ea" stop-opacity="0.9"/>
+                  <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.4"/>
+                </linearGradient>
+              </defs>
+              <circle cx="100" cy="100" r="82" stroke="rgba(168,85,247,0.35)" stroke-width="2" fill="none" stroke-dasharray="6 4"/>
+              <path d="M55 165 C55 120, 80 110, 100 110 C120 110, 145 120, 145 165 Z" fill="url(#cyberGrad)"/>
+              <circle cx="100" cy="78" r="28" fill="url(#cyberGrad)"/>
+              <rect x="78" y="72" width="44" height="12" rx="4" fill="#c084fc" filter="drop-shadow(0 0 8px #c084fc)"/>
+            </svg>
+            <div class="cyber-badge-tag">&lt;DEV/&gt;</div>
+          </div>
+        </div>
+
+        <!-- Full Biography -->
+        <div class="about-bio-col">
+          <p class="about-p">
+            I'm <strong>Hitesh Chowdhary</strong>, a Bachelor of Computer Applications (BCA) student at <strong>PES University, Bengaluru</strong>. I'm interested in full-stack development, web technologies, and creating practical software solutions.
+          </p>
+          <p class="about-p">
+            My technical skills include Python, JavaScript, Java, C, Go, HTML, CSS, PHP, and MySQL. Through academic and personal projects, I've explored user authentication, database integration, symptom checking, reminders, and responsive user interfaces.
+          </p>
+          <p class="about-p">
+            I enjoy solving programming problems, exploring new technologies, debugging applications, and improving my development skills through hands-on projects. I'm also interested in UI/UX design, sketching, and illustration.
+          </p>
+          <p class="about-p">
+            My long-term goal is to build a technology business and use my skills to solve real-life problems and help people. I'm continuously learning and looking forward to opportunities where I can contribute, collaborate, and grow as a developer.
+          </p>
+          <div class="about-cta-wrap">
+            <a href="#contact" class="btn btn-outline btn-with-icon">
+              LET'S CONNECT
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Key Highlights -->
+        <div class="about-highlights-col">
+          <div class="highlight-card">
+            <div class="highlight-icon">🎓</div>
+            <div class="highlight-content">
+              <h4>BCA Student</h4>
+              <p>PES University, Ring Road Campus, Bengaluru</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">💻</div>
+            <div class="highlight-content">
+              <h4>Full Stack Focus</h4>
+              <p>Frontend, Backend &amp; Relational Databases</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🎯</div>
+            <div class="highlight-content">
+              <h4>Problem Solver</h4>
+              <p>Building practical tools with clean, scalable code</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🚀</div>
+            <div class="highlight-content">
+              <h4>Vision</h4>
+              <p>Building a future technology business solving real issues</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         3. SKILLS SECTION
+         ========================================================== -->
+    <section id="skills" class="section-container skills-section">
+      <div class="section-tag">— TECHNOLOGIES AND TOOLS I WORK WITH —</div>
+      <h2 class="section-title centered-title">TECHNICAL ARSENAL</h2>
+
+      <div class="skills-categories-grid">
+        <!-- A. Programming Languages -->
+        <div class="glass-card skill-cat-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="skill-cat-title">PROGRAMMING LANGUAGES</h3>
+          </div>
+          <div class="skill-tags-row">
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M11.91 2C6.98 2 7.25 4.14 7.25 4.14L7.26 6.36H12v.69H5.16S2 6.7 2 11.66c0 4.95 2.76 4.77 2.76 4.77h1.65v-2.31s-.09-2.76 2.71-2.76h4.66s2.63.04 2.63-2.58V4.58S16.84 2 11.91 2zM9.54 3.39a.78.78 0 1 1 0 1.56.78.78 0 0 1 0-1.56z" fill="#387eb8"/>
+                <path d="M12.09 22c4.93 0 4.66-2.14 4.66-2.14l-.01-2.22H12v-.69h6.84s3.16.35 3.16-4.61c0-4.95-2.76-4.77-2.76-4.77h-1.65v2.31s.09 2.76-2.71 2.76h-4.66s-2.63-.04-2.63 2.58v4.39S7.16 22 12.09 22zm2.37-1.39a.78.78 0 1 1 0-1.56.78.78 0 0 1 0-1.56z" fill="#ffe052"/>
+              </svg>
+              <span>Python</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect width="24" height="24" rx="4" fill="#F7DF1E"/>
+                <path d="M7.5 18.5c-.8 0-1.5-.4-1.9-1.1l1.3-.8c.2.4.4.6.6.6.3 0 .5-.2.5-.7v-5.2h1.6v5.2c0 1.3-.8 2-2.1 2zm6.2 0c-1.5 0-2.4-.8-2.7-1.8l1.4-.7c.2.5.6.9 1.3.9.6 0 1-.3 1-.7 0-.5-.4-.7-1.2-1-1.3-.5-2.2-1.1-2.2-2.3 0-1.2.9-2.1 2.3-2.1 1.2 0 2 .5 2.4 1.4l-1.3.8c-.2-.4-.5-.6-1.1-.6-.5 0-.8.3-.8.6 0 .4.3.6 1.1.9 1.4.5 2.3 1.1 2.3 2.4 0 1.3-1 2.2-2.4 2.2z" fill="#000000"/>
+              </svg>
+              <span>JavaScript</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M8.8 17.6s-.8.6.6.8c1.7.2 2.9.2 5 0 0 0 .9-.3.6-.8-.6-.6-6.2-.4-6.2 0zm-.6-2.4s-.9.8.7 1c2.1.2 3.8.2 6.8 0 0 0 1.2-.4.8-1-.7-.8-8.3-.5-8.3 0zm5.6-4.6c.7 1.3-.2 2.5-.2 2.5s2.4-1.2 1.3-2.8c-1.1-1.5-2-2.3 2.7-5 0 0-6.7 1.7-3.8 5.3zm-3-1.6c.9 1.2-.2 2.3-.2 2.3s2.1-1 1.2-2.5c-.9-1.4-1.7-2.1 2.3-4.5 0 0-5.7 1.4-3.3 4.7zm7.5 8.6c-1.5 1-4.2 1.5-6.3 1.5-4.4 0-6.1-1.4-6.1-1.4s-.3.3.4.6c2.4 1 8.5 1.1 12.2-.2 0 0 .8-.4-.2-.5zm-1.8 1.9c-2.3.8-6.1.9-8.7.4-1.5-.3-2.2-.7-2.2-.7s-.1.2.3.4c2.2 1.1 7.2 1.1 11-.1 0 0 .4-.2-.4-.0z" fill="#EA2D2E"/>
+                <path d="M16.5 15.6c1.8-.9 2.5-2.1 2.5-3.3 0-1.8-1.5-2.7-1.5-2.7s.4.6.4 1.2c0 .9-.7 1.5-1.7 2-1 .5-2.2.7-2.2.7s1.3.3 2.5.1z" fill="#5382A1"/>
+              </svg>
+              <span>Java</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2L2 7.78v11.44L12 25l10-5.78V7.78L12 2z" fill="#00599C" opacity="0.3"/>
+                <path d="M12 2.5 3 7.7v11.6l9 5.2 9-5.2V7.7l-9-5.2zm0 2.3 6.9 4v8L12 20.8l-6.9-4v-8l6.9-4z" fill="#00599C"/>
+                <path d="M14.6 9.4c-.7-.5-1.6-.7-2.6-.7-2.4 0-4.2 1.6-4.2 4.1s1.8 4.1 4.2 4.1c1 0 1.9-.3 2.6-.8l-.7-1.4c-.5.4-1.1.6-1.8.6-1.4 0-2.4-.9-2.4-2.5s1-2.5 2.4-2.5c.7 0 1.3.2 1.8.6l.7-1.5z" fill="#659AD2"/>
+              </svg>
+              <span>C</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M1.5 10.5h6.5v1.2H3v3.6h4.5v-1.8H5v-1.2h3.8v4.2H1.5v-6zm9 0h6.5v6h-6.5v-6zm1.5 1.2v3.6h3.5v-3.6H12z" fill="#00ADD8"/>
+                <path d="M19 11.5h4v1.2h-4zm1 2.4h3v1.2h-3z" fill="#00ADD8"/>
+              </svg>
+              <span>Go</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- B. Web Development -->
+        <div class="glass-card skill-cat-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="skill-cat-title">WEB DEVELOPMENT</h3>
+          </div>
+          <div class="skill-tags-row">
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 2l1.6 18.2L12 23l7.4-2.8L21 2H3z" fill="#E34F26"/>
+                <path d="M12 3.6v17.4l5.9-2.2L19.2 3.6H12z" fill="#EF652A"/>
+                <path d="M12 7.7H7.7l.3 3.3H12v-3.3zm0 6.1h-2.1l-.2-1.9H7.6l.4 4.5L12 17.6v-3.8zm0-6.1h4.3l-.4 4.1-.1 1.3-3.8 1.1v-2.2l1.8-.5.2-1.8H12V7.7z" fill="#FFFFFF"/>
+              </svg>
+              <span>HTML5</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 2l1.6 18.2L12 23l7.4-2.8L21 2H3z" fill="#1572B6"/>
+                <path d="M12 3.6v17.4l5.9-2.2L19.2 3.6H12z" fill="#33A9DC"/>
+                <path d="M12 7.7H7.7l.3 3.3H12v-3.3zm0 6.1h-2.1l-.2-1.9H7.6l.4 4.5L12 17.6v-3.8zm0-6.1h4.3l-.4 4.1-.1 1.3-3.8 1.1v-2.2l1.8-.5.2-1.8H12V7.7z" fill="#FFFFFF"/>
+              </svg>
+              <span>CSS3</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <ellipse cx="12" cy="12" rx="11" ry="6.5" fill="#777BB4"/>
+                <path d="M6 14.5l.8-4.5h2.2c1.1 0 1.8.5 1.6 1.4-.2 1-1 1.4-2 1.4h-1l-.3 1.7H6zm1.8-2.6h.8c.4 0 .7-.2.8-.6.1-.4 0-.6-.4-.6H8l-.2 1.2zm4.4 2.6l.8-4.5h1.2l-.3 1.6h.1c.3-.5.8-.8 1.5-.8.9 0 1.3.6 1.1 1.7l-.4 2h-1.2l.4-1.9c.1-.5 0-.8-.4-.8-.4 0-.8.4-.9.9l-.3 1.8h-1.3zm5.7 0l.8-4.5h2.2c1.1 0 1.8.5 1.6 1.4-.2 1-1 1.4-2 1.4h-1l-.3 1.7h-1.3zm1.8-2.6h.8c.4 0 .7-.2.8-.6.1-.4 0-.6-.4-.6h-.8l-.2 1.2z" fill="#FFFFFF"/>
+              </svg>
+              <span>PHP</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect width="24" height="24" rx="5" fill="#7952B3"/>
+                <path d="M8 6h4.5c1.8 0 2.9.9 2.9 2.2 0 1-.6 1.7-1.5 2v.1c1.2.2 1.9 1.1 1.9 2.2 0 1.5-1.2 2.5-3.1 2.5H8V6zm2.3 3.7h2c.6 0 1-.3 1-.8s-.4-.8-1-.8h-2v1.6zm0 3.6h2.2c.7 0 1.1-.3 1.1-.9 0-.6-.4-.9-1.1-.9h-2.2v1.8z" fill="#FFFFFF"/>
+              </svg>
+              <span>Bootstrap</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- C. Database -->
+        <div class="glass-card skill-cat-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3 class="skill-cat-title">DATABASE</h3>
+          </div>
+          <div class="skill-tags-row">
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2C6.5 2 2 6.5 2 12c0 2.8 1.1 5.3 3 7.1l.6-.7C3.9 16.8 3 14.5 3 12c0-5 4-9 9-9s9 4 9 9c0 2.5-.9 4.8-2.6 6.4l.6.7c1.9-1.8 3-4.3 3-7.1 0-5.5-4.5-10-10-10z" fill="#00758F"/>
+                <path d="M15.5 11c-.5-.8-1.4-1.3-2.3-1.4-.9-.1-1.8.3-2.4.9-.7.6-1.1 1.4-1.3 2.3-.2.8-.1 1.7.3 2.5.4.8 1.1 1.4 1.9 1.7.8.3 1.7.3 2.5 0 .8-.3 1.5-.9 1.9-1.6.4-.8.5-1.7.3-2.5l-.9.2c.2.6.1 1.3-.2 1.9-.3.6-.8 1-1.4 1.3-.6.2-1.3.2-1.9 0-.6-.2-1.2-.7-1.5-1.3-.3-.6-.4-1.3-.3-2 .2-.7.5-1.3 1-1.8.5-.5 1.2-.8 1.9-.7.7.1 1.4.5 1.8 1.1l.9-.2z" fill="#F29111"/>
+                <circle cx="16.5" cy="8.5" r="1" fill="#00758F"/>
+              </svg>
+              <span>MySQL</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- D. Development Tools -->
+        <div class="glass-card skill-cat-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="skill-cat-title">DEVELOPMENT TOOLS</h3>
+          </div>
+          <div class="skill-tags-row">
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M17.5 2L7 11.2 3.2 8.3 1.5 9.4 5.3 13l-3.8 3.6 1.7 1.1L7 14.8l10.5 9.2L22 22V4l-4.5-2zm0 4.6v12.8L9.8 13 17.5 6.6z" fill="#007ACC"/>
+              </svg>
+              <span>Visual Studio Code</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect width="24" height="24" rx="4" fill="#FB7A24"/>
+                <path d="M6 6l4.5 6-4.5 6h2.2L11.5 13l3.3 5H17l-4.5-6L17 6h-2.2l-3.3 5-3.3-5H6z" fill="#FFFFFF"/>
+              </svg>
+              <span>XAMPP</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M21.6 10.6L13.4 2.4c-.8-.8-2-.8-2.8 0L8.8 4.2l3.5 3.5c.6-.2 1.3-.1 1.8.4.6.6.7 1.4.4 2.1l3.4 3.4c.7-.3 1.5-.2 2.1.4.8.8.8 2 0 2.8s-2 .8-2.8 0c-.6-.6-.7-1.4-.4-2.1L13.5 11v5.1c.3.2.6.5.7.9.4.9 0 2-1 2.4-1 .4-2 0-2.4-1-.4-1 0-2 1-2.4.3-.1.6-.2.9-.2v-5.2c-.3 0-.6-.1-.9-.2-.9-.4-1.4-1.4-1-2.4.3-.7.9-1.2 1.6-1.3L8.9 3.2 2.4 9.7c-.8.8-.8 2 0 2.8l8.2 8.2c.8.8 2 .8 2.8 0l8.2-8.2c.8-.7.8-1.9 0-2.7z" fill="#F05032"/>
+              </svg>
+              <span>Git</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              <span>GitHub</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- E. Data & Productivity -->
+        <div class="glass-card skill-cat-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3 class="skill-cat-title">DATA &amp; PRODUCTIVITY</h3>
+          </div>
+          <div class="skill-tags-row">
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="11" y="9" width="2" height="6" fill="#EB5937"/>
+                <rect x="9" y="11" width="6" height="2" fill="#EB5937"/>
+                <rect x="11.2" y="2.5" width="1.6" height="4.5" fill="#5A8FBA"/>
+                <rect x="9.8" y="4" width="4.4" height="1.6" fill="#5A8FBA"/>
+                <rect x="11.2" y="17" width="1.6" height="4.5" fill="#5A8FBA"/>
+                <rect x="9.8" y="18.5" width="4.4" height="1.6" fill="#5A8FBA"/>
+                <rect x="2.5" y="11.2" width="4.5" height="1.6" fill="#E97627"/>
+                <rect x="4" y="9.8" width="1.6" height="4.4" fill="#E97627"/>
+                <rect x="17" y="11.2" width="4.5" height="1.6" fill="#E97627"/>
+                <rect x="18.5" y="9.8" width="1.6" height="4.4" fill="#E97627"/>
+              </svg>
+              <span>Tableau</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="1" y="3" width="14" height="18" rx="2" fill="#107C41"/>
+                <path d="M4.5 7.5l3.2 4.5-3.2 4.5h2.1l2.1-3.2 2.1 3.2h2.1l-3.2-4.5 3.2-4.5H11l-2.1 3.2-2.1-3.2H4.5z" fill="#FFFFFF"/>
+                <rect x="15" y="5" width="8" height="14" rx="1.5" fill="#21A366"/>
+                <line x1="17" y1="8" x2="21" y2="8" stroke="#FFFFFF" stroke-width="1.2"/>
+                <line x1="17" y1="12" x2="21" y2="12" stroke="#FFFFFF" stroke-width="1.2"/>
+                <line x1="17" y1="16" x2="21" y2="16" stroke="#FFFFFF" stroke-width="1.2"/>
+              </svg>
+              <span>Microsoft Excel</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- F. Professional Skills -->
+        <div class="glass-card skill-cat-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-2h2zm0-4h-2V7h2z"/></svg>
+            </div>
+            <h3 class="skill-cat-title">PROFESSIONAL SKILLS</h3>
+          </div>
+          <div class="skill-tags-row">
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-1 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+                <path d="M9 18h6"/>
+                <path d="M10 22h4"/>
+              </svg>
+              <span>Problem Solving</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+              <span>Analytical Thinking</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+              <span>Team Collaboration</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="13.5" cy="6.5" r=".5" fill="#c084fc"/>
+                <circle cx="17.5" cy="10.5" r=".5" fill="#c084fc"/>
+                <circle cx="8.5" cy="7.5" r=".5" fill="#c084fc"/>
+                <circle cx="6.5" cy="12.5" r=".5" fill="#c084fc"/>
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2z"/>
+              </svg>
+              <span>Basic UI/UX Design</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+              <span>Communication</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+              </svg>
+              <span>Continuous Learning</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         4. PROJECTS SECTION
+         ========================================================== -->
+    <section id="projects" class="section-container projects-section">
+      <div class="projects-header-row">
+        <div>
+          <div class="section-tag">— SOME THINGS I'VE BUILT —</div>
+          <h2 class="section-title">FEATURED PROJECTS</h2>
+        </div>
+        <a href="https://github.com/hitesh066" target="_blank" rel="noopener noreferrer" class="view-all-link">
+          GITHUB REPOSITORIES
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="projects-grid-2col">
+        <!-- PROJECT 1: Online Health Monitoring and Alert System -->
+        <div class="project-card project-card-detailed">
+          <div class="project-thumb cyber-thumb-health">
+            <span class="project-index">01</span>
+            <div class="thumb-inner-art">
+              <svg viewBox="0 0 100 100" class="thumb-svg" aria-hidden="true">
+                <!-- Pulse / Heartbeat Line inside Cross Graphic -->
+                <rect x="25" y="25" width="50" height="50" rx="10" stroke="#a855f7" stroke-width="1.5" fill="rgba(168,85,247,0.1)"/>
+                <path d="M28 50 L38 50 L43 35 L49 65 L54 45 L58 53 L62 50 L72 50" stroke="#c084fc" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="50" cy="50" r="3" fill="#22c55e"/>
+              </svg>
+            </div>
+            <div class="thumb-date-badge">2026 &ndash; PRESENT</div>
+          </div>
+
+          <div class="project-info">
+            <span class="project-category">FULL STACK WEB APPLICATION</span>
+            <h3 class="project-title">ONLINE HEALTH MONITORING AND ALERT SYSTEM</h3>
+            <p class="project-desc">
+              A web-based application designed to help users monitor health-related information, check symptoms, manage reminders, upload medical reports, and access emergency support.
+            </p>
+
+            <div class="project-features-list">
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> User registration and secure authentication with PHP sessions &amp; password hashing</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> Interactive symptom checker covering 16 symptoms</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> Emergency mode with nearby hospital information</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> Reminder management with full CRUD operations</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> Medical report upload handling and responsive interface</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> Relational MySQL database integration</div>
+            </div>
+
+            <div class="tech-tags-list">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="project-status-pill">
+                <span class="status-pulse-dot"></span>
+                In Active Development &bull; Local Build
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: Personal Portfolio Website -->
+        <div class="project-card project-card-detailed">
+          <div class="project-thumb cyber-thumb-portfolio">
+            <span class="project-index">02</span>
+            <div class="thumb-inner-art">
+              <svg viewBox="0 0 100 100" class="thumb-svg" aria-hidden="true">
+                <!-- 3D Perspective Tunnel & Canvas Scrub Graphic -->
+                <polygon points="12,12 88,12 70,36 30,36" stroke="#9333ea" stroke-width="1.2" fill="none"/>
+                <polygon points="12,88 88,88 70,64 30,64" stroke="#9333ea" stroke-width="1.2" fill="none"/>
+                <rect x="30" y="36" width="40" height="28" rx="4" stroke="#c084fc" stroke-width="1.8" fill="rgba(168,85,247,0.2)"/>
+                <circle cx="50" cy="50" r="5" fill="#38bdf8"/>
+              </svg>
+            </div>
+            <div class="thumb-date-badge">2026 &ndash; PRESENT</div>
+          </div>
+
+          <div class="project-info">
+            <span class="project-category">FRONTEND &bull; 3D INTERACTIVE PORTFOLIO</span>
+            <h3 class="project-title">PERSONAL PORTFOLIO WEBSITE</h3>
+            <p class="project-desc">
+              A responsive personal portfolio website designed to showcase my profile, technical skills, projects, education, certification, and contact information.
+            </p>
+
+            <div class="project-features-list">
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> Modern futuristic neon-purple and dark-blue aesthetic</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> High-performance 2D Canvas 240-frame sequence scrubbing with LERP</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> Zero-flicker preloading and nearest-loaded frame fallback</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> Fully responsive desktop, tablet, and mobile layouts</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> Dedicated sections for skills, experience, education &amp; verified credentials</div>
+            </div>
+
+            <div class="tech-tags-list">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Canvas 2D</span>
+              <span class="tech-tag">Smooth Lerp</span>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="#home" class="btn btn-primary btn-sm">
+                CURRENT LIVE PROJECT
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="https://github.com/hitesh066" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
+                GITHUB
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         5. PRACTICAL EXPERIENCE SECTION
+         ========================================================== -->
+    <section id="experience" class="section-container experience-section">
+      <div class="section-tag">— HANDS-ON LEARNING &amp; DEVELOPMENT —</div>
+      <h2 class="section-title centered-title">PRACTICAL EXPERIENCE</h2>
+
+      <div class="experience-card-wrap">
+        <div class="glass-card experience-card">
+          <div class="exp-header-row">
+            <div class="exp-title-block">
+              <span class="exp-badge">PRACTICE &bull; INDEPENDENT PROJECT WORK</span>
+              <h3 class="exp-role">WEB DEVELOPMENT &mdash; SELF-INITIATED PROJECTS &amp; PRACTICE</h3>
+              <div class="exp-nature">Self-Initiated Projects &amp; Continuous Learning &bull; Non-Corporate</div>
+            </div>
+            <div class="exp-date-pill">2026</div>
+          </div>
+
+          <div class="exp-divider"></div>
+
+          <ul class="exp-bullets-list">
+            <li>
+              <span class="bullet-icon">&#x2714;</span>
+              <span>Built small web applications utilizing <strong>PHP, MySQL, JavaScript, and Bootstrap</strong>.</span>
+            </li>
+            <li>
+              <span class="bullet-icon">&#x2714;</span>
+              <span>Practised hands-on application debugging, troubleshooting, and relational database integration.</span>
+            </li>
+            <li>
+              <span class="bullet-icon">&#x2714;</span>
+              <span>Worked on refining interface design, accessibility, and user experience.</span>
+            </li>
+            <li>
+              <span class="bullet-icon">&#x2714;</span>
+              <span>Developed practical working knowledge of modern full-stack development workflows and architecture.</span>
+            </li>
+            <li>
+              <span class="bullet-icon">&#x2714;</span>
+              <span>Used <strong>Git and GitHub</strong> for version control, repository maintenance, and change tracking.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         6. EDUCATION SECTION
+         ========================================================== -->
+    <section id="education" class="section-container education-section">
+      <div class="section-tag">— ACADEMIC BACKGROUND —</div>
+      <h2 class="section-title centered-title">EDUCATION</h2>
+
+      <div class="education-card-wrap">
+        <div class="glass-card education-card">
+          <div class="edu-top-row">
+            <div class="edu-degree-block">
+              <span class="edu-status-badge">CURRENTLY PURSUING</span>
+              <h3 class="edu-degree">BACHELOR OF COMPUTER APPLICATIONS (BCA)</h3>
+              <div class="edu-institution">PES University, Ring Road Campus</div>
+              <div class="edu-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Bengaluru, Karnataka, India
+              </div>
+            </div>
+            <div class="edu-year-pill">
+              <span class="year-label">ENROLLED</span>
+              <span class="year-val">2024 &ndash; PRESENT</span>
+            </div>
+          </div>
+
+          <div class="edu-divider"></div>
+
+          <h4 class="coursework-heading">/// RELEVANT COURSEWORK</h4>
+          <div class="coursework-grid">
+            <div class="course-chip">Programming with C</div>
+            <div class="course-chip">Computing Fundamentals using Python</div>
+            <div class="course-chip">Java Technologies</div>
+            <div class="course-chip">Web Design and Development</div>
+            <div class="course-chip">PHP and MySQL</div>
+            <div class="course-chip">Data Structures and Algorithms</div>
+            <div class="course-chip">Mobile App Development</div>
+            <div class="course-chip">Database Management</div>
+            <div class="course-chip">Software Engineering</div>
+            <div class="course-chip">Version Control with Git &amp; GitHub</div>
+            <div class="course-chip">Software Testing and Automation</div>
+            <div class="course-chip">Cloud Technology and AI</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         7. CERTIFICATIONS SECTION
+         ========================================================== -->
+    <section id="certifications" class="section-container certifications-section">
+      <div class="section-tag">— VERIFIED CREDENTIALS —</div>
+      <h2 class="section-title centered-title">CERTIFICATIONS AND LEARNING</h2>
+
+      <div class="certifications-grid">
+        <div class="glass-card cert-card">
+          <div class="cert-badge-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">ANTHROPIC EDUCATION</div>
+            <h3 class="cert-name">AI FLUENCY: FRAMEWORK &amp; FOUNDATIONS</h3>
+            <div class="cert-date">COMPLETION DATE: OCTOBER 10, 2026</div>
+            <p class="cert-desc">
+              Learned about the four core competencies of AI Fluency: Delegation, Description, Discernment, and Diligence, with a focus on effective, responsible, and safe collaboration with AI.
+            </p>
+            <div class="cert-meta-tag">
+              <span class="check-icon">&#x2714;</span> Verified Official Certificate
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         8. BEYOND CODING (STRENGTHS & INTERESTS)
+         ========================================================== -->
+    <section id="beyond-coding" class="section-container beyond-section">
+      <div class="section-tag">— STRENGTHS, PASSIONS &amp; MINDSET —</div>
+      <h2 class="section-title centered-title">BEYOND CODING</h2>
+
+      <div class="beyond-grid">
+        <div class="glass-card beyond-card">
+          <div class="beyond-icon">🎨</div>
+          <h3 class="beyond-title">SKETCHING &amp; ILLUSTRATION</h3>
+          <p class="beyond-desc">Enjoys sketching and creative visual illustration, bringing an artistic perspective and visual intuition into UI/UX design.</p>
+        </div>
+
+        <div class="glass-card beyond-card">
+          <div class="beyond-icon">⚡</div>
+          <h3 class="beyond-title">CONTINUOUS LEARNING</h3>
+          <p class="beyond-desc">Eager to explore emerging technologies, investigate developer tools, and actively expand full-stack technical breadth.</p>
+        </div>
+
+        <div class="glass-card beyond-card">
+          <div class="beyond-icon">🛡️</div>
+          <h3 class="beyond-title">DISCIPLINE &amp; INTEGRITY</h3>
+          <p class="beyond-desc">Values honesty, personal discipline, and rigorous work ethic in both academic learning and software development.</p>
+        </div>
+
+        <div class="glass-card beyond-card">
+          <div class="beyond-icon">🧩</div>
+          <h3 class="beyond-title">PROBLEM SOLVING</h3>
+          <p class="beyond-desc">Approaches technical challenges with analytical thinking, methodically breaking down problems and debugging applications.</p>
+        </div>
+
+        <div class="glass-card beyond-card">
+          <div class="beyond-icon">🚀</div>
+          <h3 class="beyond-title">FUTURE ENTREPRENEURSHIP</h3>
+          <p class="beyond-desc">Aspirational goal of building an impactful technology business, leveraging practical software to solve pressing challenges.</p>
+        </div>
+
+        <div class="glass-card beyond-card">
+          <div class="beyond-icon">🌍</div>
+          <h3 class="beyond-title">REAL-WORLD IMPACT</h3>
+          <p class="beyond-desc">Dedicated to creating purposeful software applications that directly help people and improve real-life workflows.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         9. CONTACT SECTION
+         ========================================================== -->
+    <section id="contact" class="section-container contact-section">
+      <div class="contact-grid">
+        <!-- Contact Details -->
+        <div class="contact-info-col">
+          <div class="badge-subtitle">GET IN TOUCH</div>
+          <h2 class="section-title">
+            LET'S CONNECT<br>
+            <span class="gradient-text">HAVE A PROJECT IDEA OR AN OPPORTUNITY? LET'S TALK.</span>
+          </h2>
+          <p class="contact-intro">
+            Have an internship opportunity, project idea, or just want to discuss software development? Feel free to reach out. I am open to discussing new opportunities.
+          </p>
+
+          <div class="contact-details-list">
+            <!-- Email -->
+            <a href="mailto:hiteshe297@gmail.com" class="contact-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-label">EMAIL</span>
+                <span class="contact-val">hiteshe297@gmail.com</span>
+              </div>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+917795724122" class="contact-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-label">PHONE</span>
+                <span class="contact-val">+91 7795724122</span>
+              </div>
+            </a>
+
+            <!-- Location -->
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-label">LOCATION</span>
+                <span class="contact-val">Bengaluru, Karnataka, India</span>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/hitesh-chowdhary-a715a631b" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-label">LINKEDIN</span>
+                <span class="contact-val">hitesh-chowdhary-a715a631b</span>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/hitesh066" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="contact-item-text">
+                <span class="contact-label">GITHUB</span>
+                <span class="contact-val">github.com/hitesh066</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form with Direct Mailto Execution -->
+        <div class="contact-form-col">
+          <form class="glass-card contact-form" id="contact-form">
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">YOUR NAME</label>
+                <input type="text" id="contact-name" name="name" placeholder="Hitesh Chowdhary" required class="cyber-input">
+              </div>
+              <div class="form-group">
+                <label for="contact-email" class="form-label">YOUR EMAIL</label>
+                <input type="email" id="contact-email" name="email" placeholder="name@domain.com" required class="cyber-input">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">SUBJECT</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="Project Inquiry / Opportunity" required class="cyber-input">
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-label">YOUR MESSAGE</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required class="cyber-input"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              SEND MESSAGE
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            </button>
+            <div id="form-feedback" class="form-feedback-message"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================
+       10. FOOTER
+       ========================================================== -->
+  <footer class="site-footer">
+    <div class="footer-top-grid">
+      <div class="footer-brand-col">
+        <a href="#home" class="brand-logo">&lt;HITESH.DEV/&gt;</a>
+        <h4 class="footer-name">Hitesh Chowdhary</h4>
+        <p class="footer-role">BCA Student &bull; Aspiring Full Stack Developer</p>
+        <p class="footer-location">Bengaluru, Karnataka, India</p>
+        <p class="footer-desc">
+          Designed and developed with a passion for technology, creativity, and continuous learning.
+        </p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-heading">NAVIGATION</h4>
+        <div class="footer-links-grid">
+          <a href="#home">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4 class="footer-heading">DIRECT CONTACT</h4>
+        <div class="footer-contact-info">
+          <a href="mailto:hiteshe297@gmail.com" class="footer-contact-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            hiteshe297@gmail.com
+          </a>
+          <a href="tel:+917795724122" class="footer-contact-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +91 7795724122
+          </a>
+          <div class="footer-social-icons">
+            <a href="https://github.com/hitesh066" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/hitesh-chowdhary-a715a631b" target="_blank" rel="noopener noreferrer" class="social-circle-btn" aria-label="LinkedIn Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      &copy; 2026 Hitesh Chowdhary &bull; All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Resume Alert Modal -->
+  <div id="resume-modal" class="cyber-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="cyber-modal-card">
+      <div class="modal-header">
+        <span class="modal-tag">/// RESUME STATUS</span>
+        <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <h3 class="modal-title">RESUME FILE NOTICE</h3>
+      <p class="modal-desc">
+        The resume PDF (<code>resume.pdf</code>) is not yet located in the project root directory.
+      </p>
+      <div class="modal-callout">
+        Please add your resume PDF named <strong><code>resume.pdf</code></strong> to:
+        <br><code>portfolio website/resume.pdf</code>
+      </div>
+      <p class="modal-footer-text">
+        Once placed, clicking &ldquo;Download Resume&rdquo; will immediately download your file. In the meantime, you can connect directly with me:
+      </p>
+      <div class="modal-actions">
+        <a href="mailto:hiteshe297@gmail.com" class="btn btn-primary btn-sm">EMAIL ME DIRECTLY</a>
+        <button class="btn btn-ghost btn-sm" id="modal-dismiss">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
