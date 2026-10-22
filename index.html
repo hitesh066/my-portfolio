@@ -119,93 +119,184 @@
     </section>
 
     <!-- ==========================================================
-         2. ABOUT ME SECTION
+         2. ABOUT ME SECTION (ALIGNED TO 3RD REFERENCE DESIGN)
          ========================================================== -->
-    <section id="about" class="section-container about-section">
-      <div class="section-tag">— GET TO KNOW ME —</div>
-      <h2 class="section-title">
-        ABOUT ME<br>
-        <span class="gradient-text">DEVELOPER BY CODE, CREATOR BY DRIVE</span>
-      </h2>
+    <section id="about" class="about-section">
+      <div class="about-container">
+        
+        <!-- Top Main Master Card: Framed Portrait + Bio -->
+        <div class="glass-card about-hero-card scroll-reveal">
+          <!-- Left Column: Compact Framed Portrait -->
+          <div class="about-portrait-col">
+            <div class="about-portrait-frame">
+              <div class="portrait-corner tl" aria-hidden="true"></div>
+              <div class="portrait-corner tr" aria-hidden="true"></div>
+              <div class="portrait-corner bl" aria-hidden="true"></div>
+              <div class="portrait-corner br" aria-hidden="true"></div>
+              <img 
+                src="./images/about-portrait.jpg" 
+                alt="Hitesh Chowdhary - Coding Portrait" 
+                class="about-portrait-img" 
+                loading="lazy"
+              >
+              <div class="portrait-floating-badge">
+                <span class="status-pulse-dot live"></span>
+                <span>BCA STUDENT &bull; PES UNIVERSITY</span>
+              </div>
+            </div>
+          </div>
 
-      <div class="about-grid">
-        <!-- Abstract Developer Holographic Frame -->
-        <div class="cyber-media-frame">
-          <div class="cyber-corner tl"></div>
-          <div class="cyber-corner tr"></div>
-          <div class="cyber-corner bl"></div>
-          <div class="cyber-corner br"></div>
-          <div class="cyber-scanline"></div>
-          <div class="cyber-silhouette">
-            <svg viewBox="0 0 200 200" class="cyber-avatar-svg" aria-hidden="true">
-              <defs>
-                <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#9333ea" stop-opacity="0.9"/>
-                  <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.4"/>
-                </linearGradient>
-              </defs>
-              <circle cx="100" cy="100" r="82" stroke="rgba(168,85,247,0.35)" stroke-width="2" fill="none" stroke-dasharray="6 4"/>
-              <path d="M55 165 C55 120, 80 110, 100 110 C120 110, 145 120, 145 165 Z" fill="url(#cyberGrad)"/>
-              <circle cx="100" cy="78" r="28" fill="url(#cyberGrad)"/>
-              <rect x="78" y="72" width="44" height="12" rx="4" fill="#c084fc" filter="drop-shadow(0 0 8px #c084fc)"/>
-            </svg>
-            <div class="cyber-badge-tag">&lt;DEV/&gt;</div>
+          <!-- Right Column: Heading, Bio, Highlights, Focus, Goal, CTA -->
+          <div class="about-info-col">
+            <div class="about-eyebrow">ABOUT ME</div>
+            <h2 class="about-heading">Passionate Developer</h2>
+            <h3 class="about-subheading gradient-text">Focused on Building Useful Digital Solutions</h3>
+
+            <div class="about-intro-text">
+              <p>
+                I'm <strong>Hitesh Chowdhary</strong>, a Bachelor of Computer Applications (BCA) student at <strong>PES University, Bengaluru</strong>, interested in full-stack development, web technologies, and practical software engineering.
+              </p>
+              <p>
+                I enjoy building useful applications, solving programming problems, debugging code, and creating responsive user interfaces through academic and personal projects.
+              </p>
+            </div>
+
+            <!-- Reference-Style 3 Highlight Metric Cards -->
+            <div class="about-metrics-row">
+              <div class="metric-card">
+                <div class="metric-icon-wrap">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                </div>
+                <div class="metric-content">
+                  <span class="metric-value">PES University</span>
+                  <span class="metric-title">BCA Student</span>
+                </div>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-icon-wrap">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <div class="metric-content">
+                  <span class="metric-value">Full-Stack Focus</span>
+                  <span class="metric-title">Web &amp; Databases</span>
+                </div>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-icon-wrap">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="metric-content">
+                  <span class="metric-value">Hands-On Practice</span>
+                  <span class="metric-title">Independent Work</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Current Focus -->
+            <div class="about-focus-row">
+              <span class="focus-title-label">CURRENT FOCUS:</span>
+              <div class="focus-pill-list">
+                <span class="focus-pill">Full-Stack Web Development</span>
+                <span class="focus-pill">Responsive Frontend Development</span>
+                <span class="focus-pill">PHP, JavaScript, and MySQL</span>
+                <span class="focus-pill">Database Integration</span>
+                <span class="focus-pill">AI and Emerging Technologies</span>
+              </div>
+            </div>
+
+            <!-- Goal Box -->
+            <div class="about-goal-box">
+              <span class="goal-label">GOAL</span>
+              <p class="goal-text">“To become a skilled software developer, build technology that solves real-world problems, and eventually develop useful technology products of my own.”</p>
+            </div>
+
+            <!-- Actions -->
+            <div class="about-buttons-row">
+              <a href="#contact" class="btn btn-primary">
+                LET'S CONNECT
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#projects" class="btn btn-outline">
+                VIEW PROJECTS
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Refined Biography -->
-        <div class="about-bio-col">
-          <p class="about-p">
-            I am a Bachelor of Computer Applications student at <strong>PES University, Bengaluru</strong>, interested in full-stack development, web technologies, databases, and practical software engineering.
-          </p>
-          <p class="about-p">
-            Through academic and self-initiated projects, I have explored web application development, authentication, database integration, symptom checking, reminders, medical report handling, and responsive interfaces.
-          </p>
-          <p class="about-p">
-            I enjoy solving programming problems, debugging applications, exploring new technologies, and improving my development skills through hands-on practice.
-          </p>
-          <p class="about-p">
-            My long-term goal is to build useful technology products that solve real-world problems while continuing to grow as a software developer.
-          </p>
-          <div class="about-cta-wrap">
-            <a href="#contact" class="btn btn-outline btn-with-icon">
-              LET'S CONNECT
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-            </a>
+        <!-- Bottom Section: SERVICES / Four Feature Cards in One Horizontal Row -->
+        <div class="about-services-wrap scroll-reveal">
+          <div class="services-header-block">
+            <span class="services-eyebrow">SERVICES</span>
+            <h3 class="services-title">What I Can Do For You</h3>
+          </div>
+
+          <div class="services-grid-4col">
+            <!-- Card 1: Web Development -->
+            <div class="glass-card service-box">
+              <div class="service-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <h4 class="service-name">Web Development</h4>
+              <p class="service-details">Building practical web applications using technologies I have studied and used.</p>
+              <div class="service-arrow-row">
+                <span class="service-arrow-icon">&rarr;</span>
+              </div>
+            </div>
+
+            <!-- Card 2: Responsive Design -->
+            <div class="glass-card service-box">
+              <div class="service-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <h4 class="service-name">Responsive Design</h4>
+              <p class="service-details">Creating interfaces that adapt to different screen sizes and devices.</p>
+              <div class="service-arrow-row">
+                <span class="service-arrow-icon">&rarr;</span>
+              </div>
+            </div>
+
+            <!-- Card 3: Database Integration -->
+            <div class="glass-card service-box">
+              <div class="service-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                </svg>
+              </div>
+              <h4 class="service-name">Database Integration</h4>
+              <p class="service-details">Exploring data-driven applications and relational database integration.</p>
+              <div class="service-arrow-row">
+                <span class="service-arrow-icon">&rarr;</span>
+              </div>
+            </div>
+
+            <!-- Card 4: AI Exploration -->
+            <div class="glass-card service-box">
+              <div class="service-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+              </div>
+              <h4 class="service-name">AI Exploration</h4>
+              <p class="service-details">Learning about AI technologies and exploring their practical applications.</p>
+              <div class="service-arrow-row">
+                <span class="service-arrow-icon">&rarr;</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Key Highlights -->
-        <div class="about-highlights-col">
-          <div class="highlight-card">
-            <div class="highlight-icon">🎓</div>
-            <div class="highlight-content">
-              <h4>BCA Student</h4>
-              <p>PES University, Ring Road Campus, Bengaluru</p>
-            </div>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">💻</div>
-            <div class="highlight-content">
-              <h4>Full Stack Focus</h4>
-              <p>Frontend, Backend &amp; Relational Databases</p>
-            </div>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">🎯</div>
-            <div class="highlight-content">
-              <h4>Practical Problem Solver</h4>
-              <p>Building usable software with clean, scalable code</p>
-            </div>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">🚀</div>
-            <div class="highlight-content">
-              <h4>Vision</h4>
-              <p>Engineering real-world products that help people</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 

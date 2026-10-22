@@ -114,6 +114,23 @@ function updateActiveNavLink() {
   }
 }
 
+function updateCanvasVisibilityForAbout() {
+  const aboutEl = document.getElementById('about');
+  if (!aboutEl || !canvas) return;
+
+  const rect = aboutEl.getBoundingClientRect();
+  const winHeight = window.innerHeight;
+
+  if (rect.bottom > 0 && rect.top < winHeight) {
+    const visibleHeight = Math.min(rect.bottom, winHeight) - Math.max(rect.top, 0);
+    const visibleRatio = visibleHeight / winHeight;
+    const opacity = Math.max(0, 1 - visibleRatio * 1.6);
+    canvas.style.opacity = opacity.toFixed(2);
+  } else {
+    canvas.style.opacity = '1';
+  }
+}
+
 function updateTargetProgress() {
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
   if (maxScroll > 0) {
@@ -122,6 +139,7 @@ function updateTargetProgress() {
     targetProgress = 0;
   }
   updateActiveNavLink();
+  updateCanvasVisibilityForAbout();
 }
 
 // Continuous requestAnimationFrame render loop with linear interpolation
@@ -219,6 +237,35 @@ if (contactForm) {
   });
 }
 
+// Scroll Reveal Animations with IntersectionObserver & Progressive Enhancement
+function initScrollReveal() {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  const revealElements = document.querySelectorAll('.scroll-reveal, .service-box');
+  if (!revealElements.length) return;
+
+  if ('IntersectionObserver' in window) {
+    document.documentElement.classList.add('has-scroll-reveal');
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '0px 0px -20px 0px',
+      threshold: 0.05
+    });
+
+    revealElements.forEach((el) => observer.observe(el));
+  }
+}
+
 // Window Event Listeners
 window.addEventListener('resize', resizeCanvas);
 window.addEventListener('scroll', updateTargetProgress, { passive: true });
@@ -227,4 +274,5 @@ window.addEventListener('scroll', updateTargetProgress, { passive: true });
 resizeCanvas();
 preloadFrames();
 updateTargetProgress();
+initScrollReveal();
 requestAnimationFrame(renderLoop);
