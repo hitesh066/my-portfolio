@@ -179,48 +179,12 @@ if (mobileToggle && navLinksContainer) {
   });
 }
 
-// Resume PDF verification & download modal handling
+// Resume download button feedback (native download handled directly by <a> download attribute)
 const resumeBtn = document.getElementById('resume-download-btn');
-const resumeModal = document.getElementById('resume-modal');
-const modalClose = document.getElementById('modal-close');
-const modalDismiss = document.getElementById('modal-dismiss');
-
 if (resumeBtn) {
-  resumeBtn.addEventListener('click', async (e) => {
-    try {
-      const response = await fetch('resume.pdf', { method: 'HEAD' });
-      if (!response.ok) {
-        e.preventDefault();
-        showResumeModal();
-      }
-      // If response is ok (file exists), normal download proceeds automatically
-    } catch (err) {
-      // Local file or network block, show modal if not accessible
-      e.preventDefault();
-      showResumeModal();
-    }
-  });
-}
-
-function showResumeModal() {
-  if (resumeModal) {
-    resumeModal.classList.add('active');
-    resumeModal.setAttribute('aria-hidden', 'false');
-  }
-}
-
-function closeResumeModal() {
-  if (resumeModal) {
-    resumeModal.classList.remove('active');
-    resumeModal.setAttribute('aria-hidden', 'true');
-  }
-}
-
-if (modalClose) modalClose.addEventListener('click', closeResumeModal);
-if (modalDismiss) modalDismiss.addEventListener('click', closeResumeModal);
-if (resumeModal) {
-  resumeModal.addEventListener('click', (e) => {
-    if (e.target === resumeModal) closeResumeModal();
+  resumeBtn.addEventListener('click', () => {
+    // Allows native download of ./resume.pdf as Hitesh_Chowdhary_Resume.pdf
+    console.log('Initiating resume download: ./resume.pdf');
   });
 }
 

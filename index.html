@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -37,7 +37,7 @@
   <header class="navbar">
     <div class="nav-container">
       <a href="#home" class="brand-logo">&lt;HITESH.DEV/&gt;</a>
-      <nav class="nav-links" id="main-nav">
+      <nav class="nav-links" id="main-nav" aria-label="Main Navigation">
         <a href="#home" class="nav-link active">HOME</a>
         <a href="#about" class="nav-link">ABOUT ME</a>
         <a href="#skills" class="nav-link">SKILLS</a>
@@ -79,7 +79,7 @@
               VIEW MY PROJECTS
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="resume.pdf" id="resume-download-btn" class="btn btn-ghost" download="Hitesh_Chowdhary_Resume.pdf">
+            <a href="./resume.pdf" id="resume-download-btn" class="btn btn-ghost" download="Hitesh_Chowdhary_Resume.pdf" target="_blank" rel="noopener noreferrer">
               DOWNLOAD RESUME
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
             </a>
@@ -153,19 +153,19 @@
           </div>
         </div>
 
-        <!-- Full Biography -->
+        <!-- Refined Biography -->
         <div class="about-bio-col">
           <p class="about-p">
-            I'm <strong>Hitesh Chowdhary</strong>, a Bachelor of Computer Applications (BCA) student at <strong>PES University, Bengaluru</strong>. I'm interested in full-stack development, web technologies, and creating practical software solutions.
+            I am a Bachelor of Computer Applications student at <strong>PES University, Bengaluru</strong>, interested in full-stack development, web technologies, databases, and practical software engineering.
           </p>
           <p class="about-p">
-            My technical skills include Python, JavaScript, Java, C, Go, HTML, CSS, PHP, and MySQL. Through academic and personal projects, I've explored user authentication, database integration, symptom checking, reminders, and responsive user interfaces.
+            Through academic and self-initiated projects, I have explored web application development, authentication, database integration, symptom checking, reminders, medical report handling, and responsive interfaces.
           </p>
           <p class="about-p">
-            I enjoy solving programming problems, exploring new technologies, debugging applications, and improving my development skills through hands-on projects. I'm also interested in UI/UX design, sketching, and illustration.
+            I enjoy solving programming problems, debugging applications, exploring new technologies, and improving my development skills through hands-on practice.
           </p>
           <p class="about-p">
-            My long-term goal is to build a technology business and use my skills to solve real-life problems and help people. I'm continuously learning and looking forward to opportunities where I can contribute, collaborate, and grow as a developer.
+            My long-term goal is to build useful technology products that solve real-world problems while continuing to grow as a software developer.
           </p>
           <div class="about-cta-wrap">
             <a href="#contact" class="btn btn-outline btn-with-icon">
@@ -194,15 +194,15 @@
           <div class="highlight-card">
             <div class="highlight-icon">🎯</div>
             <div class="highlight-content">
-              <h4>Problem Solver</h4>
-              <p>Building practical tools with clean, scalable code</p>
+              <h4>Practical Problem Solver</h4>
+              <p>Building usable software with clean, scalable code</p>
             </div>
           </div>
           <div class="highlight-card">
             <div class="highlight-icon">🚀</div>
             <div class="highlight-content">
               <h4>Vision</h4>
-              <p>Building a future technology business solving real issues</p>
+              <p>Engineering real-world products that help people</p>
             </div>
           </div>
         </div>
@@ -262,6 +262,13 @@
               </svg>
               <span>Go</span>
             </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <ellipse cx="12" cy="12" rx="11" ry="6.5" fill="#777BB4"/>
+                <path d="M6 14.5l.8-4.5h2.2c1.1 0 1.8.5 1.6 1.4-.2 1-1 1.4-2 1.4h-1l-.3 1.7H6zm1.8-2.6h.8c.4 0 .7-.2.8-.6.1-.4 0-.6-.4-.6H8l-.2 1.2zm4.4 2.6l.8-4.5h1.2l-.3 1.6h.1c.3-.5.8-.8 1.5-.8.9 0 1.3.6 1.1 1.7l-.4 2h-1.2l.4-1.9c.1-.5 0-.8-.4-.8-.4 0-.8.4-.9.9l-.3 1.8h-1.3zm5.7 0l.8-4.5h2.2c1.1 0 1.8.5 1.6 1.4-.2 1-1 1.4-2 1.4h-1l-.3 1.7h-1.3zm1.8-2.6h.8c.4 0 .7-.2.8-.6.1-.4 0-.6-.4-.6h-.8l-.2 1.2z" fill="#FFFFFF"/>
+              </svg>
+              <span>PHP</span>
+            </span>
           </div>
         </div>
 
@@ -313,7 +320,7 @@
             <div class="skill-cat-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
             </div>
-            <h3 class="skill-cat-title">DATABASE</h3>
+            <h3 class="skill-cat-title">DATABASES</h3>
           </div>
           <div class="skill-tags-row">
             <span class="skill-badge">
@@ -438,16 +445,6 @@
             </span>
             <span class="skill-badge">
               <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="13.5" cy="6.5" r=".5" fill="#c084fc"/>
-                <circle cx="17.5" cy="10.5" r=".5" fill="#c084fc"/>
-                <circle cx="8.5" cy="7.5" r=".5" fill="#c084fc"/>
-                <circle cx="6.5" cy="12.5" r=".5" fill="#c084fc"/>
-                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2z"/>
-              </svg>
-              <span>Basic UI/UX Design</span>
-            </span>
-            <span class="skill-badge">
-              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
               </svg>
               <span>Communication</span>
@@ -458,6 +455,16 @@
                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
               </svg>
               <span>Continuous Learning</span>
+            </span>
+            <span class="skill-badge">
+              <svg class="tech-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="13.5" cy="6.5" r=".5" fill="#c084fc"/>
+                <circle cx="17.5" cy="10.5" r=".5" fill="#c084fc"/>
+                <circle cx="8.5" cy="7.5" r=".5" fill="#c084fc"/>
+                <circle cx="6.5" cy="12.5" r=".5" fill="#c084fc"/>
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2z"/>
+              </svg>
+              <span>Basic UI/UX Design</span>
             </span>
           </div>
         </div>
@@ -470,23 +477,22 @@
     <section id="projects" class="section-container projects-section">
       <div class="projects-header-row">
         <div>
-          <div class="section-tag">— SOME THINGS I'VE BUILT —</div>
+          <div class="section-tag">— FEATURED ACADEMIC &amp; INDIVIDUAL WORK —</div>
           <h2 class="section-title">FEATURED PROJECTS</h2>
         </div>
         <a href="https://github.com/hitesh066" target="_blank" rel="noopener noreferrer" class="view-all-link">
-          GITHUB REPOSITORIES
+          GITHUB PROFILE
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
 
       <div class="projects-grid-2col">
-        <!-- PROJECT 1: Online Health Monitoring and Alert System -->
+        <!-- PROJECT A: Online Health Monitoring and Alert System -->
         <div class="project-card project-card-detailed">
           <div class="project-thumb cyber-thumb-health">
             <span class="project-index">01</span>
             <div class="thumb-inner-art">
               <svg viewBox="0 0 100 100" class="thumb-svg" aria-hidden="true">
-                <!-- Pulse / Heartbeat Line inside Cross Graphic -->
                 <rect x="25" y="25" width="50" height="50" rx="10" stroke="#a855f7" stroke-width="1.5" fill="rgba(168,85,247,0.1)"/>
                 <path d="M28 50 L38 50 L43 35 L49 65 L54 45 L58 53 L62 50 L72 50" stroke="#c084fc" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
                 <circle cx="50" cy="50" r="3" fill="#22c55e"/>
@@ -496,45 +502,48 @@
           </div>
 
           <div class="project-info">
-            <span class="project-category">FULL STACK WEB APPLICATION</span>
+            <div class="project-meta-row">
+              <span class="project-ownership-badge group">GROUP PROJECT &bull; 4 MEMBERS</span>
+              <span class="project-status-pill in-dev">STATUS: IN DEVELOPMENT</span>
+            </div>
             <h3 class="project-title">ONLINE HEALTH MONITORING AND ALERT SYSTEM</h3>
+            <p class="project-role-text"><strong>My Role:</strong> Team member &amp; contributor (Frontend UI, symptom workflow &amp; database integration)</p>
             <p class="project-desc">
-              A web-based application designed to help users monitor health-related information, check symptoms, manage reminders, upload medical reports, and access emergency support.
+              A web-based health monitoring application intended to help users review symptoms, manage reminders, upload medical reports, and access relevant emergency information.
             </p>
 
             <div class="project-features-list">
-              <div class="feature-item"><span class="feat-bullet">&bull;</span> User registration and secure authentication with PHP sessions &amp; password hashing</div>
-              <div class="feature-item"><span class="feat-bullet">&bull;</span> Interactive symptom checker covering 16 symptoms</div>
-              <div class="feature-item"><span class="feat-bullet">&bull;</span> Emergency mode with nearby hospital information</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> User registration and authentication with PHP sessions &amp; password hashing</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> Interactive symptom checker workflow</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> Emergency mode with nearby hospital and emergency contact information</div>
               <div class="feature-item"><span class="feat-bullet">&bull;</span> Reminder management with full CRUD operations</div>
               <div class="feature-item"><span class="feat-bullet">&bull;</span> Medical report upload handling and responsive interface</div>
               <div class="feature-item"><span class="feat-bullet">&bull;</span> Relational MySQL database integration</div>
             </div>
 
             <div class="tech-tags-list">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
               <span class="tech-tag">PHP</span>
               <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
             </div>
 
             <div class="project-card-footer">
-              <div class="project-status-pill">
-                <span class="status-pulse-dot"></span>
-                In Active Development &bull; Local Build
+              <div class="project-status-pill in-dev">
+                <span class="status-pulse-dot in-dev"></span>
+                In Development &bull; Academic Group Project (No public URL yet)
               </div>
             </div>
           </div>
         </div>
 
-        <!-- PROJECT 2: Personal Portfolio Website -->
+        <!-- PROJECT B: Personal Portfolio Website -->
         <div class="project-card project-card-detailed">
           <div class="project-thumb cyber-thumb-portfolio">
             <span class="project-index">02</span>
             <div class="thumb-inner-art">
               <svg viewBox="0 0 100 100" class="thumb-svg" aria-hidden="true">
-                <!-- 3D Perspective Tunnel & Canvas Scrub Graphic -->
                 <polygon points="12,12 88,12 70,36 30,36" stroke="#9333ea" stroke-width="1.2" fill="none"/>
                 <polygon points="12,88 88,88 70,64 30,64" stroke="#9333ea" stroke-width="1.2" fill="none"/>
                 <rect x="30" y="36" width="40" height="28" rx="4" stroke="#c084fc" stroke-width="1.8" fill="rgba(168,85,247,0.2)"/>
@@ -545,18 +554,22 @@
           </div>
 
           <div class="project-info">
-            <span class="project-category">FRONTEND &bull; 3D INTERACTIVE PORTFOLIO</span>
+            <div class="project-meta-row">
+              <span class="project-ownership-badge individual">INDIVIDUAL PROJECT</span>
+              <span class="project-status-pill live">LIVE DEPLOYMENT</span>
+            </div>
             <h3 class="project-title">PERSONAL PORTFOLIO WEBSITE</h3>
+            <p class="project-role-text"><strong>My Role:</strong> Solo Design &amp; Development</p>
             <p class="project-desc">
-              A responsive personal portfolio website designed to showcase my profile, technical skills, projects, education, certification, and contact information.
+              A responsive personal portfolio designed to showcase my background, technical skills, projects, education, credentials, and contact information.
             </p>
 
             <div class="project-features-list">
               <div class="feature-item"><span class="feat-bullet">&bull;</span> Modern futuristic neon-purple and dark-blue aesthetic</div>
               <div class="feature-item"><span class="feat-bullet">&bull;</span> High-performance 2D Canvas 240-frame sequence scrubbing with LERP</div>
-              <div class="feature-item"><span class="feat-bullet">&bull;</span> Zero-flicker preloading and nearest-loaded frame fallback</div>
-              <div class="feature-item"><span class="feat-bullet">&bull;</span> Fully responsive desktop, tablet, and mobile layouts</div>
-              <div class="feature-item"><span class="feat-bullet">&bull;</span> Dedicated sections for skills, experience, education &amp; verified credentials</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> Responsive desktop, tablet, and mobile layouts</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> Verified credentials, tech arsenal with brand SVG icons, and coursework</div>
+              <div class="feature-item"><span class="feat-bullet">&bull;</span> Tested direct resume download and functional contact integration</div>
             </div>
 
             <div class="tech-tags-list">
@@ -564,17 +577,17 @@
               <span class="tech-tag">CSS3</span>
               <span class="tech-tag">JavaScript</span>
               <span class="tech-tag">Canvas 2D</span>
-              <span class="tech-tag">Smooth Lerp</span>
+              <span class="tech-tag">GitHub Pages</span>
             </div>
 
             <div class="project-card-footer">
-              <a href="#home" class="btn btn-primary btn-sm">
-                CURRENT LIVE PROJECT
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <a href="https://hitesh066.github.io/my-portfolio/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                LIVE DEMO
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
               </a>
-              <a href="https://github.com/hitesh066" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
-                GITHUB
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              <a href="https://github.com/hitesh066/my-portfolio/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm">
+                GITHUB REPO
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
               </a>
             </div>
           </div>
@@ -587,20 +600,24 @@
          ========================================================== -->
     <section id="experience" class="section-container experience-section">
       <div class="section-tag">— HANDS-ON LEARNING &amp; DEVELOPMENT —</div>
-      <h2 class="section-title centered-title">PRACTICAL EXPERIENCE</h2>
+      <h2 class="section-title centered-title">INDEPENDENT WEB DEVELOPMENT PROJECTS</h2>
 
       <div class="experience-card-wrap">
         <div class="glass-card experience-card">
           <div class="exp-header-row">
             <div class="exp-title-block">
-              <span class="exp-badge">PRACTICE &bull; INDEPENDENT PROJECT WORK</span>
-              <h3 class="exp-role">WEB DEVELOPMENT &mdash; SELF-INITIATED PROJECTS &amp; PRACTICE</h3>
-              <div class="exp-nature">Self-Initiated Projects &amp; Continuous Learning &bull; Non-Corporate</div>
+              <span class="exp-badge">PRACTICE &bull; INDEPENDENT &amp; ACADEMIC PROJECT WORK</span>
+              <h3 class="exp-role">Independent Web Development Projects</h3>
+              <div class="exp-nature">Hands-On Practice &bull; Academic &amp; Self-Initiated Projects (Non-Corporate Employment)</div>
             </div>
-            <div class="exp-date-pill">2026</div>
+            <div class="exp-date-pill">2026 &ndash; PRESENT</div>
           </div>
 
           <div class="exp-divider"></div>
+
+          <p class="exp-summary-text">
+            Hands-on practice through academic and self-initiated projects, including web application development, database integration, debugging, interface design, and version control.
+          </p>
 
           <ul class="exp-bullets-list">
             <li>
@@ -622,6 +639,10 @@
             <li>
               <span class="bullet-icon">&#x2714;</span>
               <span>Used <strong>Git and GitHub</strong> for version control, repository maintenance, and change tracking.</span>
+            </li>
+            <li>
+              <span class="bullet-icon">&#x2714;</span>
+              <span>Collaborated in an academic 4-member team on the Online Health Monitoring &amp; Alert System, contributing to frontend interface design, symptom checking flows, and backend database connectivity.</span>
             </li>
           </ul>
         </div>
@@ -675,27 +696,140 @@
     </section>
 
     <!-- ==========================================================
-         7. CERTIFICATIONS SECTION
+         7. CERTIFICATIONS & LEARNING SECTION (ALL 4 CREDENTIALS)
          ========================================================== -->
     <section id="certifications" class="section-container certifications-section">
-      <div class="section-tag">— VERIFIED CREDENTIALS —</div>
+      <div class="section-tag">— PROFESSIONAL CREDENTIALS &amp; LEARNING PATHS —</div>
       <h2 class="section-title centered-title">CERTIFICATIONS AND LEARNING</h2>
 
       <div class="certifications-grid">
+        <!-- Credential 1: IBM -->
         <div class="glass-card cert-card">
-          <div class="cert-badge-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-          </div>
-          <div class="cert-body">
-            <div class="cert-issuer">ANTHROPIC EDUCATION</div>
-            <h3 class="cert-name">AI FLUENCY: FRAMEWORK &amp; FOUNDATIONS</h3>
-            <div class="cert-date">COMPLETION DATE: OCTOBER 10, 2026</div>
-            <p class="cert-desc">
-              Learned about the four core competencies of AI Fluency: Delegation, Description, Discernment, and Diligence, with a focus on effective, responsible, and safe collaboration with AI.
-            </p>
-            <div class="cert-meta-tag">
-              <span class="check-icon">&#x2714;</span> Verified Official Certificate
+          <div class="cert-header">
+            <div class="cert-badge-icon ibm-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="8" fill="rgba(0, 98, 255, 0.15)" stroke="rgba(0, 98, 255, 0.4)"/>
+                <text x="16" y="21" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="13" fill="#0062FF" text-anchor="middle" letter-spacing="1">IBM</text>
+              </svg>
             </div>
+            <div class="cert-title-group">
+              <div class="cert-issuer">IBM</div>
+              <h3 class="cert-name">AI Fundamentals: Foundations for Understanding AI</h3>
+              <div class="cert-date">ISSUE DATE: OCTOBER 2026</div>
+            </div>
+          </div>
+          <p class="cert-desc">
+            A foundation in artificial intelligence and machine learning concepts, based on the actual learning content.
+          </p>
+          <div class="cert-skills-wrap">
+            <span class="cert-skill-tag">Artificial Intelligence (AI)</span>
+            <span class="cert-skill-tag">Machine Learning</span>
+          </div>
+          <div class="cert-card-footer">
+            <span class="cert-status-badge pending">
+              <span class="status-pulse-dot pending"></span> Official Credential URL Pending (Provide Credly/IBM Link)
+            </span>
+          </div>
+        </div>
+
+        <!-- Credential 2: Microsoft Learning (Blazor) -->
+        <div class="glass-card cert-card">
+          <div class="cert-header">
+            <div class="cert-badge-icon ms-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="8" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(168, 85, 247, 0.3)"/>
+                <g transform="translate(7, 7)">
+                  <rect x="0" y="0" width="8.2" height="8.2" fill="#F25022"/>
+                  <rect x="9.8" y="0" width="8.2" height="8.2" fill="#7FBA00"/>
+                  <rect x="0" y="9.8" width="8.2" height="8.2" fill="#00A4EF"/>
+                  <rect x="9.8" y="9.8" width="8.2" height="8.2" fill="#FFB900"/>
+                </g>
+              </svg>
+            </div>
+            <div class="cert-title-group">
+              <div class="cert-issuer">MICROSOFT LEARNING</div>
+              <h3 class="cert-name">Build your first web app with Blazor</h3>
+              <div class="cert-date">ISSUE DATE: OCTOBER 2026</div>
+            </div>
+          </div>
+          <p class="cert-desc">
+            Introductory learning about building web applications using Blazor and related web development concepts.
+          </p>
+          <div class="cert-skills-wrap">
+            <span class="cert-skill-tag">Blazor</span>
+            <span class="cert-skill-tag">Web Development</span>
+          </div>
+          <div class="cert-card-footer">
+            <span class="cert-status-badge pending">
+              <span class="status-pulse-dot pending"></span> Official Learning URL Pending (Provide MS Learn Link)
+            </span>
+          </div>
+        </div>
+
+        <!-- Credential 3: Microsoft (Copilot) -->
+        <div class="glass-card cert-card">
+          <div class="cert-header">
+            <div class="cert-badge-icon ms-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="8" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(168, 85, 247, 0.3)"/>
+                <g transform="translate(7, 7)">
+                  <rect x="0" y="0" width="8.2" height="8.2" fill="#F25022"/>
+                  <rect x="9.8" y="0" width="8.2" height="8.2" fill="#7FBA00"/>
+                  <rect x="0" y="9.8" width="8.2" height="8.2" fill="#00A4EF"/>
+                  <rect x="9.8" y="9.8" width="8.2" height="8.2" fill="#FFB900"/>
+                </g>
+              </svg>
+            </div>
+            <div class="cert-title-group">
+              <div class="cert-issuer">MICROSOFT</div>
+              <h3 class="cert-name">Get started with Microsoft Copilot</h3>
+              <div class="cert-date">ISSUE DATE: OCTOBER 2026</div>
+            </div>
+          </div>
+          <p class="cert-desc">
+            An introduction to Microsoft Copilot and its practical use for AI-assisted tasks.
+          </p>
+          <div class="cert-skills-wrap">
+            <span class="cert-skill-tag">Microsoft Copilot</span>
+            <span class="cert-skill-tag">AI Productivity</span>
+          </div>
+          <div class="cert-card-footer">
+            <span class="cert-status-badge pending">
+              <span class="status-pulse-dot pending"></span> Official Module URL Pending (Provide MS Learn Link)
+            </span>
+          </div>
+        </div>
+
+        <!-- Credential 4: Anthropic -->
+        <div class="glass-card cert-card">
+          <div class="cert-header">
+            <div class="cert-badge-icon anthropic-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="8" fill="rgba(217, 119, 87, 0.15)" stroke="rgba(217, 119, 87, 0.4)"/>
+                <path d="M18.8 8h-3.6l-5.2 16h3.4l1.1-3.6h4.8l1.1 3.6h3.4L18.8 8zm-3.5 9.7l1.7-5.7 1.7 5.7h-3.4z" fill="#D97757"/>
+              </svg>
+            </div>
+            <div class="cert-title-group">
+              <div class="cert-issuer">ANTHROPIC</div>
+              <h3 class="cert-name">AI Fluency: Framework &amp; Foundations</h3>
+              <div class="cert-date">ISSUE DATE: OCTOBER 2026</div>
+            </div>
+          </div>
+          <p class="cert-desc">
+            Learning about the four core competencies of AI Fluency: Delegation, Description, Discernment, and Diligence, with an emphasis on effective, responsible, and safe collaboration with AI.
+          </p>
+          <div class="cert-skills-wrap">
+            <span class="cert-skill-tag">Artificial Intelligence (AI)</span>
+            <span class="cert-skill-tag">AI Fluency</span>
+          </div>
+          <div class="cert-card-footer">
+            <a href="./certificates/anthropic-ai-fluency.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+              VIEW CERTIFICATE PDF
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+            <span class="cert-status-badge verified">
+              <span class="check-icon">&#x2714;</span> Verified Certificate on File
+            </span>
           </div>
         </div>
       </div>
@@ -760,7 +894,7 @@
             <span class="gradient-text">HAVE A PROJECT IDEA OR AN OPPORTUNITY? LET'S TALK.</span>
           </h2>
           <p class="contact-intro">
-            Have an internship opportunity, project idea, or just want to discuss software development? Feel free to reach out. I am open to discussing new opportunities.
+            Have an internship opportunity, project inquiry, or just want to discuss software development? Feel free to reach out. I am open to discussing new opportunities.
           </p>
 
           <div class="contact-details-list">
@@ -826,27 +960,27 @@
           <form class="glass-card contact-form" id="contact-form">
             <div class="form-row-2">
               <div class="form-group">
-                <label for="contact-name" class="form-label">YOUR NAME</label>
-                <input type="text" id="contact-name" name="name" placeholder="Hitesh Chowdhary" required class="cyber-input">
+                <label for="contact-name" class="form-label">YOUR NAME *</label>
+                <input type="text" id="contact-name" name="name" placeholder="Hitesh Chowdhary" required class="cyber-input" autocomplete="name">
               </div>
               <div class="form-group">
-                <label for="contact-email" class="form-label">YOUR EMAIL</label>
-                <input type="email" id="contact-email" name="email" placeholder="name@domain.com" required class="cyber-input">
+                <label for="contact-email" class="form-label">YOUR EMAIL *</label>
+                <input type="email" id="contact-email" name="email" placeholder="name@domain.com" required class="cyber-input" autocomplete="email">
               </div>
             </div>
             <div class="form-group">
-              <label for="contact-subject" class="form-label">SUBJECT</label>
-              <input type="text" id="contact-subject" name="subject" placeholder="Project Inquiry / Opportunity" required class="cyber-input">
+              <label for="contact-subject" class="form-label">SUBJECT *</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="Internship Opportunity / Project Inquiry" required class="cyber-input">
             </div>
             <div class="form-group">
-              <label for="contact-message" class="form-label">YOUR MESSAGE</label>
+              <label for="contact-message" class="form-label">YOUR MESSAGE *</label>
               <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required class="cyber-input"></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-submit">
               SEND MESSAGE
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
             </button>
-            <div id="form-feedback" class="form-feedback-message"></div>
+            <div id="form-feedback" class="form-feedback-message" role="status" aria-live="polite"></div>
           </form>
         </div>
       </div>
@@ -863,7 +997,7 @@
         <a href="#home" class="brand-logo">&lt;HITESH.DEV/&gt;</a>
         <h4 class="footer-name">Hitesh Chowdhary</h4>
         <p class="footer-role">BCA Student &bull; Aspiring Full Stack Developer</p>
-        <p class="footer-location">Bengaluru, Karnataka, India</p>
+        <p class="footer-location">PES University &bull; Bengaluru, Karnataka, India</p>
         <p class="footer-desc">
           Designed and developed with a passion for technology, creativity, and continuous learning.
         </p>
@@ -911,31 +1045,6 @@
     </div>
   </footer>
 
-  <!-- Resume Alert Modal -->
-  <div id="resume-modal" class="cyber-modal" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="cyber-modal-card">
-      <div class="modal-header">
-        <span class="modal-tag">/// RESUME STATUS</span>
-        <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
-      </div>
-      <h3 class="modal-title">RESUME FILE NOTICE</h3>
-      <p class="modal-desc">
-        The resume PDF (<code>resume.pdf</code>) is not yet located in the project root directory.
-      </p>
-      <div class="modal-callout">
-        Please add your resume PDF named <strong><code>resume.pdf</code></strong> to:
-        <br><code>portfolio website/resume.pdf</code>
-      </div>
-      <p class="modal-footer-text">
-        Once placed, clicking &ldquo;Download Resume&rdquo; will immediately download your file. In the meantime, you can connect directly with me:
-      </p>
-      <div class="modal-actions">
-        <a href="mailto:hiteshe297@gmail.com" class="btn btn-primary btn-sm">EMAIL ME DIRECTLY</a>
-        <button class="btn btn-ghost btn-sm" id="modal-dismiss">CLOSE</button>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
